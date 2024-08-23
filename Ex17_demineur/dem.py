@@ -1,7 +1,7 @@
 import random # import librairie pour opérations aléatoires
 import tkinter # import librairie pour affichage graphique
 
-def draw_grid(number1, number2):
+def draw_grid(window, buttons,number1, number2):
     # Création de la grille cachée (backSide) avec les valeurs 'X' et '0'
     backSide = createGridBack(number1,number2)
     print("backSide = ", backSide)
@@ -91,7 +91,7 @@ window.minsize(500,500)
 # Initialisation de la liste de boutons
 buttons = []
 # Création de la grille de boutons
-draw_grid(6,8)
+draw_grid(window, buttons, 6,8)
 
 # Affichage de la fenêtre principale
 window.mainloop() 
